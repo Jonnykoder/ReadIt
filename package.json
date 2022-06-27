@@ -7,7 +7,7 @@
 		"start": "electron .",
 		"watch": "nodemon --exec electron .",
 		"reset": "git reset --hard",
-		"build": "electron-builder -w"
+		"build": "electron-builder -w zip"
 	},
 	"repository": "https://github.com/Jonnykoder/ReadIt",
 	"homepage": "https://github.com/Jonnykoder/ReadIt",
@@ -16,7 +16,7 @@
 		"Master Electron",
 		"demo"
 	],
-	"author": "GitHub, Stackacademytv",
+	"author": "John Eric Azores",
 	"license": "CC0-1.0",
 	"devDependencies": {
 		"electron": "^9.0.0",
