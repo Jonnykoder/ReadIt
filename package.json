@@ -7,7 +7,7 @@
 		"start": "electron .",
 		"watch": "nodemon --exec electron .",
 		"reset": "git reset --hard",
-		"build": "electron-builder -w zip"
+		"build": "electron-builder -w"
 	},
 	"repository": "https://github.com/Jonnykoder/ReadIt",
 	"homepage": "https://github.com/Jonnykoder/ReadIt",
@@ -28,5 +28,20 @@
 		"electron-window-state": "^5.0.3",
 		"jquery": "^3.6.0",
 		"sweetalert2": "^11.4.18"
+	},
+	"build": {
+		"appId": "com.johnericCodes.readit",
+		"copyright": "Copyright Stackacademy.tv",
+		"mac": {
+			"category": "public.app-category.productivity",
+			"target": "dmg"
+		},
+		"win": {
+			"verifyUpdateCodeSignature": false,
+			"target": "zip"
+		},
+		"linux": {
+			"category": "utility"
+		}
 	}
 }
